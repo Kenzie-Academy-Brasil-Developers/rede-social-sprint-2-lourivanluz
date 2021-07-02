@@ -5,42 +5,35 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- TITLE -->
 	<title>Instagram</title>
-
-	<!-- CSS -->
-	<link rel="stylesheet" href="css/style.css" />
-
-	<!-- FAVICON -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />	<link rel="stylesheet" href="css/style.css" />
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 
 </head>
 <body>
-	<!-- CABEÇALHO -->
+
 	<header>
 		<a href="https://www.instagram.com/" class="instagram-logo">
-			<figure>
-				<img src="img/logo.png" alt="Instagram logo">
+			<figure class="container__logo">
+				<img src="img/logo-kenziegram.png" alt="Instagram logo" class="img__logo">
 			</figure>
 		</a>
 	</header>
 
-	<!-- CONTEÚDO DA PÁGINA -->
 	<main>
 
-		<!-- CONTEÚDO SOBRE O USUÁRIO -->
 		<article class="profile-content">
 
-			<!-- FOTO DE PERFIL DO USUÁRIO -->
 			<section class="profile-photo">
-				<figure>
-					<img src="img/profile-photo.jpg" alt="Profile photo">
+				<figure class="segura-borda">
+					<img src="img/profile-photo.jpg" alt="Profile photo" class="img__profile">
 				</figure>
 			</section>
-
-			<!-- DETALHES/INFORMAÇÕES DO USUÁRIO -->
 			<section class="profile-info">
-				<h1>kenzieacademybr</h1>
+				<h1 class="profile__name">kenzieacademybr</h1>
 
 				<!-- POSTS/SEGUIDORES/SEGUINDO -->
 				<div class="profile-data">
@@ -49,102 +42,94 @@
 					<p><span>227</span> following</p>
 				</div>
 
-				<h2> Kenzie Academy Brasil </h2>
-				<ul>
-					<li>
-						<p>Nós investimos em você. Aprenda programação sem mensalidade até conseguir uma remuneração de pelo menos R$3.000 por mês.</p>
+				<h2 class="profile__name profile__name--low"> Kenzie Academy Brasil </h2>
+				<ul class="profile__list">
+					<li class="profile__container__item">
+						<p class="profile__item__list">Nós investimos em você. Aprenda programação sem mensalidade até conseguir uma remuneração de pelo menos R$3.000 por mês.</p>
 					</li>
-					<li>
-						<p>Inscreva-se através do link.</p>
+					<li class="profile__container__item">
+						<p class="profile__item__list">Inscreva-se através do link.</p>
 					</li>
-					<li>
-						<a href="https://linktr.ee/kenzieacademybr">linktr.ee/kenzieacademybr</a>
+					<li class="profile__container__item">
+						<a href="https://linktr.ee/kenzieacademybr" class="profile__item__list list__link" >linktr.ee/kenzieacademybr</a>
 					</li>
 				</ul>
+				
 			</section>
 		</article>
 
-		<!-- DESTAQUES DO USUÁRIO -->
 		<article class="highlighted-stories">
-			<ul>
-				<li class="add-new-highlight">
-					<figure>
-						<img src="img/plus-sign.png" alt="Highlight">
-						<figcaption>New</figcaption>
+			<ul class="stories__list">
+				<li class= "stories__itemlist new__stories" >
+					<figure class="container__stories">
+						<div class="stories__border">
+							<img src="img/plus-sign.png" alt="Highlight" class="img__stories">
+						</div>
+						<figcaption class="stories__description">New</figcaption>
 					</figure>
 				</li>
-				<li>
-					<figure>
-						<img src="img/highlight.jpg" alt="Highlight">
-						<figcaption>Open House</figcaption>
+				<li class="stories__itemlist">
+					<figure class="container__stories">
+						<div class= "stories__border">
+							<img src="img/highlight.jpg" alt="Highlight" class="img__stories">
+						</div>
+						<figcaption class="stories__description">Open House</figcaption>
 					</figure>
 				</li>
 			</ul>
 		</article>
 
-		<!-- POSTS DO USUÁRIO -->
 		<article class="profile-posts">
-
-			<!-- MENU DE POSTS -->
-			<nav>
-				<a href="#">Posts</a>
-				<a href="#">Igtv</a>
-				<a href="#">Tagged</a>
+			<nav class="nav__profile__post">
+				<a href="#" class="nav__post__link"><i class="fas fa-th nav__profile__icon"></i>Posts</a>
+				<a href="#"class="nav__post__link"><i class="fas fa-tv nav__profile__icon"></i>Igtv</a>
+				<a href="#"class="nav__post__link"><i class="far fa-address-card nav__profile__icon"></i>Tagged</a>
 			</nav>
-
-			<!-- LISTA DE POSTS -->
-			<ul>
-
-				<!-- POST -->
+			<ul class="container__posts">
 				<li>
 					<a href="#">
-						<figure>
-							<img src="img/post1.jpg" alt="Post">
+						<figure class="container__post__img">
+							<img src="img/post1.jpg" alt="Post" class="post__img">
 						</figure>
 					</a>
 				</li>
 
-				<!-- POST -->
 				<li>
 					<a href="#">
-						<figure>
-							<img src="img/post2.jpg" alt="Post">
+						<figure class="container__post__img">
+							<img src="img/post2.jpg" alt="Post" class="post__img">
+						</figure>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<figure class="container__post__img">
+							<img src="img/post3.jpg" alt="Post" class="post__img">
 						</figure>
 					</a>
 				</li>
 				
-				<!-- POST -->
 				<li>
 					<a href="#">
-						<figure>
-							<img src="img/post3.jpg" alt="Post">
+						<figure class="container__post__img">
+							<img src="img/post4.jpg" alt="Post" class="post__img" >
 						</figure>
 					</a>
 				</li>
-				
-				<!-- POST -->
+
 				<li>
 					<a href="#">
-						<figure>
-							<img src="img/post4.jpg" alt="Post">
+						<figure class="container__post__img">
+							<img src="img/post5.jpg" alt="Post" class="post__img">
 						</figure>
 					</a>
 				</li>
-				
-				<!-- POST -->
+
 				<li>
 					<a href="#">
-						<figure>
-							<img src="img/post5.jpg" alt="Post">
-						</figure>
-					</a>
-				</li>
-				
-				<!-- POST -->
-				<li>
-					<a href="#">
-						<figure>
-							<img src="img/post6.jpg" alt="Post">
+						<figure class="container__post__img">
+							<img src="img/post6.jpg" alt="Post" class="post__img">
 						</figure>
 					</a>
 				</li>
@@ -152,22 +137,25 @@
 		</article>
 	</main>
 
-	<!-- RODAPÉ -->
-	<footer>
+	<footer class="footer">
 
 		<!-- MENU RODAPÉ -->
 		<nav class="footer-nav">
-			<a href="#">About</a>
-			<a href="#">Help</a>
-			<a href="#">Press</a>
-			<a href="#">Api</a>
-			<a href="#">Jobs</a>
-			<a href="#">Privacy</a>
-			<a href="#">Terms</a>
-			<a href="#">Locations</a>
-			<a href="#">Top accounts</a>
-			<a href="#">Hashtags</a>
-			<a href="#">Language</a>
+
+			<ul class="footer-list">
+				<li class="footer__item"><a href="#" class="footer__link"><span>About</span></a> </li>
+				<li class="footer__item"><a href="#" class="footer__link"><span>Help</span></a></li>
+				<li class="footer__item"><a href="#" class="footer__link"><span>Press</span></a></li>
+				<li class="footer__item"><a href="#" class="footer__link"><span>Api</span></a></li>
+				<li class="footer__item"><a href="#" class="footer__link"><span>Jobs</span></a></li>
+				<li class="footer__item"><a href="#" class="footer__link"><span>Privacy</span></a></li>
+				<li class="footer__item"><a href="#" class="footer__link"><span>Terms</span></a></li>
+				<li class="footer__item"><a href="#" class="footer__link"><span>Locations</span></a></li>
+				<li class="footer__item"><a href="#" class="footer__link"><span>Top accounts</span></a></li>
+				<li class="footer__item"><a href="#" class="footer__link"><span>Hashtags</span></a></li>
+				<li class="footer__item"><a href="#" class="footer__link"><span>Language</span></a></li>
+			</ul>
+		
 		</nav>
 
 		<!-- COPYRIGHT -->
@@ -176,5 +164,6 @@
 		</div>
 
 	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
