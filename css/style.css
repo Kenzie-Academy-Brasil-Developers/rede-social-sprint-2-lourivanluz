@@ -29,12 +29,10 @@ img{
 	max-width: 100%;
 }
 
-
-
-
 :root{
   
 }
+
 html{
 	font-size: 62.5%;
 
@@ -190,6 +188,7 @@ header{
 	}
 		.container__post__img{
 			width: 293px;
+			height: 293px;
 			padding-right: 15px;
 			padding-bottom: 15px;
 		}
@@ -235,7 +234,6 @@ header{
 		margin: 10px 0;
 	}
 
-	
 @media(min-width:540px){
 	body{
 		font-size: 2rem;
